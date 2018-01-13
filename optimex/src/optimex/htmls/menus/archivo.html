@@ -1,0 +1,145 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--Como el JEditorPane no reconoce las propiedades de los bordes,-->
+<!--lo comentamos. En su lugar utilizamos la etiqueta <hr /> para-->
+<!--dibujar lineas horizontales. Puede que en un futuro se pueda-->
+<!--utilizar-->
+
+<style type="text/css">
+body, td, th{
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+
+body {
+	margin: 2ex;
+	max-width: 120ex;
+}
+
+h1 { font-size: 160%; font-weight: normal; }
+h2 { font-size: 150%; font-weight: normal; }
+h3 { font-size: 120%; }
+h4 { font-size: 100%; }
+h5 { font-size: 90%;  }
+h6 { font-size: 90%; border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 0.2em 0;
+  /*border-bottom: 1px solid #CCCCCC;*/
+  font-family: arial, verdana, sans-serif;
+}
+
+
+.cajaContenidos {
+	margin-top: 12px;
+	background-color: #EEEEEE;
+	/*border: 1px solid #CCCCCC;*/
+	width: 300px;
+	padding: 1em;
+}
+
+.menuPath {
+  background: #c4d0f4; /* bluish color */
+  color: inherit;
+  padding-left:  1px; /* else bgcolor ends at last char - no space */
+  padding-right: 1px;
+}
+
+.piePagina{
+  background-color: #EEEEEE;
+  width: 300px;
+  /*border: medium solid #CCCCCC;*/
+}
+</style>
+
+<body>
+<a href="../menus.html">volver</a>
+<h1 id="archivo">Archivo</h1><hr />
+
+  <h3>Nueva clase</h3>
+  <p>
+  Genera una plantilla de clase java para comenzar a programar una clase nueva. Si anteriormente
+  hab&iacute;a una clase abierta a la que se le hab&iacute;an realizado cambios, se muestra un 
+  di&aacute;logo que nos pregunta si queremos guardar esos cambios antes de abrir la clase nueva.
+  </p><br />
+  
+  <h3>Guardar clase</h3>
+  <p>
+  Guarda la clase abierta en el editor. Si la clase es nueva y no existe en un archivo, se muestra 
+  un di&aacute;logo que nos permite seleccionar el nombre del archivo y el lugar donde guardarlo.
+  </p><br />
+  
+  <h3>Cargar y compilar clase</h3>
+  <p>
+  Muestra un di&aacute;logo donde se puede seleccionar un fichero java para abrir en el editor y se 
+  compila inmediatamente despu&eacute;s. Si anteriormente hab&iacute;a una clase abierta a la que se le 
+  hab&iacute;an realizado cambios, se muestra un di&aacute;logo que nos pregunta si queremos guardar 
+  esos cambios antes de abrir la clase nueva.
+  </p><br />
+  
+  <h3>Compilar clase</h3>
+  <p>
+  Se compila la clase abierta en el editor. A continuaci&oacute;n se muestra el resultado de la 
+  compilaci&oacute;n. 
+  </p><br />
+  
+  <h3>Introducir datos por teclado</h3>
+  <p>
+  Muestra un di&aacute;logo en el que podemos introducir cada uno de los valores de los que est&aacute;
+  compuesto un dato.
+  </p><br />
+
+  <h3>Generar datos aleatorios</h3>
+  <p>
+  Muestra un di&aacute;logo pidiendo el n&uacute;mero de datos que se quieren generar, una vez 
+  introducido el n&uacute;mero, se muestra otro di&aacute;logo en el que introducir los rangos 
+  de aleatoriedad de los datos a generar.La aplicaci&oacute;n  generar&aacute; los datos solicitados.
+  </p><br />
+
+  <h3>Cargar datos de fichero</h3>
+  <p>
+  Muestra un di&aacute;logo donde se puede seleccionar un fichero xml con los datos necesarios para 
+  la ejecuci&oacute;n de los m&eacute;todos selecionados. Este fichero se abre y se guardan los datos 
+  en la tabla de datos de la aplicaci&oacute;n.
+  </p><br />
+
+  <h3>Exportar tabla datos</h3>
+  <p>
+  Guarda los datos que se estan utilizando actualmente para la ejecuci&oacute;n. Muestra un 
+  di&aacute;logo donde se puede seleccionar o crear un fichero en el que guardar los datos.
+  </p><br />
+
+  <h3>Exportar tabla resultado</h3>
+  <p>
+  Muestra un di&aacute;logo donde se puede seleccionar o crear un fichero en el que guardar 
+  los resultados de una ejecuci&oacute;n.
+  </p><br />
+
+  <h3>Exportar tabla hist&oacute;rica</h3>
+  <p>
+  Muestra un di&aacute;logo donde se puede seleccionar o crear un fichero en el que guardar 
+  los resultados de todas las ejecuciones mostrados en la tabla hist&oacute;rica.
+  </p><br />
+  
+  <h3>Exportar tabla resumida</h3>
+  <p>
+  Muestra un di&aacute;logo donde se puede seleccionar o crear un fichero en el que guardar 
+  los porcentajes de optimidad de cada m&eacute;todo despu&eacute;s de las ejecuciones realizadas.
+  </p><br />
+  
+  <h3>Exportar todas las tablas</h3>
+  <p>
+  Muestra un di&aacute;logo donde se puede seleccionar el fichero excel en el que guardar 
+  todas las tablas generadas despu&eacute;s de las ejecuciones realizadas.
+  </p><br />
+
+  <h3>Salir</h3>
+  <p>
+  Cierra la aplicaci&oacute;n.
+  </p><br />
+  
+<hr />
+<div class="piePagina"><em>16 de Septiembre de 2016</em></div>  
+  
+</body>
+</html>

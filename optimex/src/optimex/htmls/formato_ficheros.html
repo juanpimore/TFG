@@ -1,0 +1,169 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--Como el JEditorPane no reconoce las propiedades de los bordes,-->
+<!--lo comentamos. En su lugar utilizamos la etiqueta <hr /> para-->
+<!--dibujar lineas horizontales. Puede que en un futuro se pueda-->
+<!--utilizar-->
+
+<style type="text/css">
+body, td, th{
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+
+body {
+	margin: 2ex;
+	max-width: 120ex;
+}
+
+h1 { font-size: 160%; font-weight: normal; }
+h2 { font-size: 150%; font-weight: normal; }
+h3 { font-size: 120%; }
+h4 { font-size: 100%; }
+h5 { font-size: 90%;  }
+h6 { font-size: 90%; border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 0.2em 0;
+  /*border-bottom: 1px solid #CCCCCC;*/
+  font-family: arial, verdana, sans-serif;
+}
+
+
+.cajaContenidos {
+	margin-top: 12px;
+	background-color: #EEEEEE;
+	/*border: 1px solid #CCCCCC;*/
+	width: 300px;
+	padding: 1em;
+}
+
+.menuPath {
+  background: #c4d0f4; /* bluish color */
+  color: inherit;
+  padding-left:  1px; /* else bgcolor ends at last char - no space */
+  padding-right: 1px;
+}
+
+.piePagina{
+  background-color: #EEEEEE;
+  width: 300px;
+  /*border: medium solid #CCCCCC;*/
+}
+
+.imagen {
+	margin: 12px 12px 12px 12px;
+}
+
+.nota {
+    font-weight: bold;
+}
+
+
+</style>
+<body>
+<a href="principal.html">volver</a>
+<h2>Formato ficheros</h2><hr /><br />
+
+	<br /><br />
+
+	<h3>Fichero de datos de entrada</h3>
+	<p>
+	Para cargar datos desde un fichero, debera crear un archivo XML, con un contenido similar a &eacute;ste:
+	<div class="imagen"><img src="img/fichero_datos.png"></div>
+	El fichero presenta el siguiente formato, una etiqueta principal <em>&lt;Fichero&gt;</em>, dentro una etiqueta
+	<em>&lt;Tipos&gt;</em> en la que se indican los tipos de los campos de cada dato, y tantas etiquetas <em>&lt;Tipo&gt;</em>
+	como tipos tenga la signatura. A continuaci&oacute;n, se presenta una etiqueta <em>&lt;ConjuntoDatos&gt;</em>,
+	dentro de la cual est&aacute;n los datos entre etiquetas <em>&lt;Dato&gt;</em>, con cada campo encerrado entre
+	<em>&lt;Campo&gt;</em>.
+
+	</p><br /><br />
+        <p>
+        Tambi&eacute;n se pueden cargar datos desde un fichero TXT con un contenido similar a &eacute;ste:
+	<div class="imagen"><img src="img/fichero_datos2.png"></div>
+	El fichero presenta el siguiente formato, una l&iacute;nea en la que se indican los tipos de los campos de cada dato,
+        y tantas l&iacute;neas como conjuntos de datos se deseen.
+
+	</p><br /><br />
+
+	<h3>Fichero de la tabla Hist&oacute;rica</h3>
+	<p>
+	El fichero de la tabla Hist&oacute;rica presenta un aspecto similar a &eacute;ste:
+	<div class="imagen"><img src="img/fichero_resultados.png"></div>
+	En el ejemplo se ven los resultados de tres m&eacute;todos coloreando en gris los m&aacute;ximos.
+	La informaci&oacute;n que provee la tabla es la siguiente:<br /><br />
+
+	<ul>
+	<li><span class="nota">N&uacute;mero de ejecuci&oacute;n:</span><br />
+	N&uacute;mero de ejecuci&oacute;n.
+	</li><br />
+	<li><span class="nota">Resultado de la ejecuci&oacute;n para cada m&eacute;todo:</span><br />
+	El nombre de la columna es el del m&eacute;todo, y en las celdas se presentan los resultados.
+	</li><br />
+	</ul>
+	</p><br />
+	
+	<h3>Fichero de la tabla Resultados</h3>
+	<p>
+	El fichero de la tabla Resultado presenta un aspecto similar a &eacute;ste:
+	<div class="imagen"><img src="img/fichero_resultados2.png"></div>
+	En el ejemplo se ven los resultados de una ejecuci&oacute;n de tres m&eacute;todos.
+	La informaci&oacute;n que provee la tabla es la siguiente:<br /><br />
+
+	<ul>
+	<li><span class="nota">M&eacute;todos:</span><br />
+	Nombre de cada m&eacute;todo.
+	</li><br />
+	<li><span class="nota">Datos de entrada:</span><br />
+	Los datos de entrada para los que se han obtenido los resultados.
+	</li><br />
+	<li><span class="nota">Resultado:</span><br />
+	Resultado de ejecuci&oacute;n de cada m&eacute;todo para los datos dados.
+	</li><br />
+	</ul>
+	</p><br />
+	
+	<h3>Fichero de la tabla Resumida</h3>
+	<p>
+	El fichero de la tabla Resumida presenta un aspecto similar a &eacute;ste:
+	<div class="imagen"><img src="img/fichero_resultados3.png"></div>
+	En el ejemplo se ven los resultados comparativos de la ejecuci&oacute;n de tres m&eacute;todos.
+	La informaci&oacute;n que provee la tabla es la siguiente:<br /><br />
+
+	<ul>
+	<li><span class="nota">Total de ejecuciones:</span><br />
+	N&uacute;mero de ejecuciones realizadas.
+	</li><br />
+        <li><span class="nota">Porcentaje de resultados sub&oacute;ptimos de cada m&eacute;todo:</span><br />
+	Porcentaje de ejecuciones en las que cada m&eacute;todo ha dado resultados sub&oacute;ptimos.
+	</li><br />
+        <li><span class="nota">Porcentaje de resultados &oacute;ptimos de cada m&eacute;todo:</span><br />
+	Porcentaje de ejecuciones en las que cada m&eacute;todo ha dado resultados &oacute;ptimos.
+	</li><br />
+        <li><span class="nota">Porcentaje de resultados super&oacute;ptimos de cada m&eacute;todo:</span><br />
+	Porcentaje de ejecuciones en las que cada m&eacute;todo ha dado resultados super&oacute;ptimos.
+	</li><br />
+        <li><span class="nota">Porcentaje de desviaci&oacute;n media de cada m&eacute;todo:</span><br />
+        Porcentaje de desviaci&oacute;n media de los resultados no &oacute;ptimos de cada m&eacute;todo.
+	</li><br />
+        <li><span class="nota">Porcentaje de desviaci&oacute;n m&aacute;xima super&oacute;ptima de cada m&eacute;todo:</span><br />
+        Porcentaje de desviaci&oacute;n m&aacute;xima de los resultados super&oacute;ptimos de cada m&eacute;todo.
+	</li><br />
+        <li><span class="nota">Porcentaje de desviaci&oacute;n m&aacute;xima sub&oacute;ptima de cada m&eacute;todo:</span><br />
+        Porcentaje de desviaci&oacute;n m&aacute;xima de los resultados sub&oacute;ptimos de cada m&eacute;todo.
+	</li><br />
+	</ul>
+	</p><br />
+	
+	<h3>Fichero de todas las tablas</h3>
+	<p>
+	El fichero Excel con todas las tablas contiene cada tabla en una de sus pestañas:<br />
+	<div class="imagen"><img src="img/fichero_resultados4.png"></div>
+<br />
+
+
+<hr />
+<div class="piePagina"><em>16 de Septiembre de 2016</em></div>  
+  
+</body>
+</html>

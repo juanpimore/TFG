@@ -1,0 +1,153 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--Como el JEditorPane no reconoce las propiedades de los bordes,-->
+<!--lo comentamos. En su lugar utilizamos la etiqueta <hr /> para-->
+<!--dibujar lineas horizontales. Puede que en un futuro se pueda-->
+<!--utilizar-->
+
+<style type="text/css">
+body, td, th{
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+
+body {
+	margin: 2ex;
+	max-width: 120ex;
+}
+
+h1 { font-size: 160%; font-weight: normal; }
+h2 { font-size: 150%; font-weight: normal; }
+h3 { font-size: 120%; }
+h4 { font-size: 100%; }
+h5 { font-size: 90%;  }
+h6 { font-size: 90%; border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 0.2em 0;
+  /*border-bottom: 1px solid #CCCCCC;*/
+  font-family: arial, verdana, sans-serif;
+}
+
+
+.cajaContenidos {
+	margin-top: 12px;
+	background-color: #EEEEEE;
+	/*border: 1px solid #CCCCCC;*/
+	width: 300px;
+	padding: 1em;
+}
+
+.menuPath {
+  background: #c4d0f4; /* bluish color */
+  color: inherit;
+  padding-left:  1px; /* else bgcolor ends at last char - no space */
+  padding-right: 1px;
+}
+
+.piePagina{
+  background-color: #EEEEEE;
+  width: 300px;
+  /*border: medium solid #CCCCCC;*/
+}
+
+.imagen {
+	margin: 12px 12px 12px 12px;
+}
+
+.nota{
+    font-weight: bold;
+}
+</style>
+<body>
+<a href="../interfaz.html">return</a>
+<h1>Tables panel</h1><hr /><br />
+<p> The appearance of the table panel is: </p><br />
+	<div class="imagen"><img src="../img/panel_tablas.png"></div><br />
+	
+<p>
+	On the first tab is the table of data:
+	<div class="imagen"><img src="../img/panel_tablas1.png"></div>
+	<ul>
+	<li><span class="nota">Num.</span><br />
+	Identifier of the data.
+	</li><br />
+	<li><span class="nota">Input data type:</span><br />
+	Input data for the data type corresponding.
+	</li><br />
+	</ul>
+</p>
+	
+<p>
+	On the second tab is the table of results: for the various methods
+	with the same data input, are the output values of the execution.
+	<div class="imagen"><img src="../img/panel_tablas2.png"></div>
+	<ul>
+	<li><span class="nota">Methods:</span><br />
+	Name of the methods.
+	</li><br />
+	<li><span class="nota">Input data:</span><br />
+	The input data for that run.
+	</li><br />
+	<li><span class="nota">Output data:</span><br />
+	The result data for that run.
+	</li>
+	</ul>
+</p>
+
+<p>
+	On the third tab shows the historical table: each execution results
+	for each set of input data and each method.
+	<div class="imagen"><img src="../img/panel_tablas3.png"></div>
+	<ul>
+	<li><span class="nota">Run number</span><br />
+	Run number.
+	</li><br />
+	<li><span class="nota">Results of each method:</span><br />
+    Results of each method for each run number.
+	</li>
+	</ul>
+</p>
+      
+<p> In the fourth tab shows the summary table: Percentage of solutions
+	optimal for each of the methods.
+	<div class="imagen"><img src="../img/panel_tablas4.png"></div>
+	<ul>
+	<li><span class="nota">Total executions:</span><br />
+	Number of executions.
+	</li><br />
+        <li><span class="nota">Percentage of suboptimal results of each method:</span><br />
+	Percentage of executions in which each method has suboptimal results.
+	</li><br />
+        <li><span class="nota">Percentage of optimal results for each method:</span><br />
+	Percentage of executions in which each method has given optimal results.
+	</li><br />
+        <li><span class="nota">Percentage superoptimal results of each method:</span><br />
+	Percentage of executions in which each method has superoptimal results.
+	</li><br />
+        <li><span class="nota">Percentage of average deviation of each method:</span><br />
+        Mean percentage deviation of the no optimal results for each method.
+	</li><br />
+        <li><span class="nota">Percent maximum deviation superoptimal of each method:</span><br />
+        Percent maximum deviation of the results superoptimal of each method.
+	</li><br />
+        <li><span class="nota">Percentage maximum deviation suboptimal of each method:</span><br />
+        Percentage of maximum deviation of the suboptimal results of each method.
+	</li><br />
+	</ul>
+</p><br />	
+
+<p>
+	In the last tab shows the graphic summary for each of the methods.
+	<div class="imagen"><img src="../img/panel_tablas5.png"></div>
+	<ul>
+	<li><span class="nota">% of optimal results</span><br />	</li>
+	<li><span class="nota">Maximum deviations</span><br />	</li>
+	</ul>
+</p>
+<br />	
+	
+<hr />
+<div class="piePagina"><em>September 16, 2016</em></div>  
+
+</body>
+</html>

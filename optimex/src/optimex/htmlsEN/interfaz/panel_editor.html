@@ -1,0 +1,92 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--Como el JEditorPane no reconoce las propiedades de los bordes,-->
+<!--lo comentamos. En su lugar utilizamos la etiqueta <hr /> para-->
+<!--dibujar lineas horizontales. Puede que en un futuro se pueda-->
+<!--utilizar-->
+
+<style type="text/css">
+body, td, th{
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+
+body {
+	margin: 2ex;
+	max-width: 120ex;
+}
+
+h1 { font-size: 160%; font-weight: normal; }
+h2 { font-size: 150%; font-weight: normal; }
+h3 { font-size: 120%; }
+h4 { font-size: 100%; }
+h5 { font-size: 90%;  }
+h6 { font-size: 90%; border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 0.2em 0;
+  /*border-bottom: 1px solid #CCCCCC;*/
+  font-family: arial, verdana, sans-serif;
+}
+
+
+.cajaContenidos {
+	margin-top: 12px;
+	background-color: #EEEEEE;
+	/*border: 1px solid #CCCCCC;*/
+	width: 300px;
+	padding: 1em;
+}
+
+.menuPath {
+  background: #c4d0f4; /* bluish color */
+  color: inherit;
+  padding-left:  1px; /* else bgcolor ends at last char - no space */
+  padding-right: 1px;
+}
+
+.piePagina{
+  background-color: #EEEEEE;
+  width: 300px;
+  /*border: medium solid #CCCCCC;*/
+}
+
+.imagen {
+	margin: 12px 12px 12px 12px;
+}
+
+.nota{
+    font-weight: bold;
+}
+</style>
+<body>
+<a href="../interfaz.html">return</a>
+<h1>Editor panel</h1><hr /><br />
+
+	<p>
+	The editor panel is a simple text editors with syntax coloring, line numbering and folding regions:
+	<div class="imagen"><img src="../img/panel_editor.png"></div>
+
+	In this editor, we find the usual buttons in any text editor:<br />
+	<ol>
+	
+	<li> Undo </li>
+	<li> Redo </li>
+
+	<li> Cut </li>
+	<li> Copy </li>
+	<li> Paste </li>
+
+	<li> Goto Line .. </li>
+	<li> Search .. </li>
+	<li> Find Next </li>
+	<li> Select All </li>
+	
+	</ol>
+	</p><br />    
+
+<hr />
+<div class="piePagina"><em>September 16, 2016</em></div>  
+
+</body>
+</html>

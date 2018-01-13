@@ -1,0 +1,107 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--Como el JEditorPane no reconoce las propiedades de los bordes,-->
+<!--lo comentamos. En su lugar utilizamos la etiqueta <hr /> para-->
+<!--dibujar lineas horizontales. Puede que en un futuro se pueda-->
+<!--utilizar-->
+
+<style type="text/css">
+body, td, th{
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+
+body {
+	margin: 2ex;
+	max-width: 120ex;
+}
+
+h1 { font-size: 160%; font-weight: normal; }
+h2 { font-size: 150%; font-weight: normal; }
+h3 { font-size: 120%; }
+h4 { font-size: 100%; }
+h5 { font-size: 90%;  }
+h6 { font-size: 90%; border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 0.2em 0;
+  /*border-bottom: 1px solid #CCCCCC;*/
+  font-family: arial, verdana, sans-serif;
+}
+
+
+.cajaContenidos {
+	margin-top: 12px;
+	background-color: #EEEEEE;
+	/*border: 1px solid #CCCCCC;*/
+	width: 300px;
+	padding: 1em;
+}
+
+.menuPath {
+  background: #c4d0f4; /* bluish color */
+  color: inherit;
+  padding-left:  1px; /* else bgcolor ends at last char - no space */
+  padding-right: 1px;
+}
+
+.piePagina{
+  background-color: #EEEEEE;
+  width: 300px;
+  /*border: medium solid #CCCCCC;*/
+}
+
+.imagen {
+	margin: 12px 12px 12px 12px;
+}
+
+.nota{
+    font-weight: bold;
+}
+</style>
+<body>
+<a href="../usarOptimEx.html">return</a>
+<h1>Run</h1><hr /><br />
+
+<h3>Running a set of methods with a single data</h3>
+<p>
+    Select <span class="menuPath"> Run &gt; Execute group of methods </span> from the menu bar.
+    <div class="imagen"><img src="../img/ejecutar1.png"></div>
+    <br />Make an execution of a group of methods with a single data. It gives a choice of methods:
+    <div class="imagen"><img src="../img/ejecutar1nok.png"></div>
+	<br />If the execution is completed successfully message is displayed:
+    <div class="imagen"><img src="../img/ejecutar1ok.png"></div>
+	<br />And if a data that has been previously used is selected, it appears the dialog:
+	<div class="imagen"><img src="../img/ejecutar1repe.png"></div>
+    
+</p><br /><br />
+
+
+<h3>Running a set of methods whit a selection of data</h3>
+<p>
+    Select <span class="menuPath"> Run &gt; Intensive execution </span> from the menu bar.
+    <div class="imagen"><img src="../img/ejecutar2.png"></div>
+    <br />Make executions of a group of methods with several data. If there are several methods
+     under the symbol selected, it hurts us choose methods:
+    <div class="imagen"><img src="../img/ejecutar2nok.png"></div>
+	<br />If the executions are completed successfully message is displayed:
+	<div class="imagen"><img src="../img/ejecutar2ok.png"></div>
+    <br />And if a data (or data) that has been previously used is selected, it appears the dialog:
+    <div class="imagen"><img src="../img/ejecutar2repe.png"></div>
+    
+</p><br /><br />
+
+<h3>Stop execution</h3>
+<p>
+    Select <span class="menuPath"> Run &gt; Stop execution </span> from the menu bar.
+    <div class="imagen"><img src="../img/ejecutarparar.png"></div>
+    <br />Stop ongoing executions when you want with this option.
+    <div class="imagen"><img src="../img/ejecutarpararok.png"></div>
+
+</p><br /><br />
+
+
+<hr />
+<div class="piePagina"><em>September 16, 2016</em></div>  
+
+</body>
+</html>

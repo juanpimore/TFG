@@ -1,0 +1,110 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--Como el JEditorPane no reconoce las propiedades de los bordes,-->
+<!--lo comentamos. En su lugar utilizamos la etiqueta <hr /> para-->
+<!--dibujar lineas horizontales. Puede que en un futuro se pueda-->
+<!--utilizar-->
+
+<style type="text/css">
+body, td, th{
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+
+body {
+	margin: 2ex;
+	max-width: 120ex;
+}
+
+h1 { font-size: 160%; font-weight: normal; }
+h2 { font-size: 150%; font-weight: normal; }
+h3 { font-size: 120%; }
+h4 { font-size: 100%; }
+h5 { font-size: 90%;  }
+h6 { font-size: 90%; border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 0.2em 0;
+  /*border-bottom: 1px solid #CCCCCC;*/
+  font-family: arial, verdana, sans-serif;
+}
+
+
+.cajaContenidos {
+	margin-top: 12px;
+	background-color: #EEEEEE;
+	/*border: 1px solid #CCCCCC;*/
+	width: 300px;
+	padding: 1em;
+}
+
+.menuPath {
+  background: #c4d0f4; /* bluish color */
+  color: inherit;
+  padding-left:  1px; /* else bgcolor ends at last char - no space */
+  padding-right: 1px;
+}
+
+.piePagina{
+  background-color: #EEEEEE;
+  width: 300px;
+  /*border: medium solid #CCCCCC;*/
+}
+
+.imagen {
+	margin: 12px 12px 12px 12px;
+}
+
+.nota{
+    font-weight: bold;
+}
+
+
+</style>
+<body>
+
+<a href="../usarOptimEx.html">return</a> 
+<h1>Load data</h1><hr /><br />
+ 
+
+<h3>Enter data from keyboard</h3>
+<p>
+    Select <span class="menuPath"> File &gt; Enter data from keyboard </span> from the menu bar.
+    <div class="imagen"><img src="../img/cargarporteclado.png"></div>
+    <br />Then enter the data you want to use, and click "OK".
+    <div class="imagen"><img src="../img/dialogoteclado.png"></div><br />
+                                                              
+</p><br /><br />
+
+
+<h3>Generate aleatory data</h3>
+<p>
+    Select <span class="menuPath"> File &gt; Generate aleatory data </span> from the menu bar.
+    <div class="imagen"><img src="../img/cargaraleatorios.png"></div>
+    <br />Then enter the number of data to generate.
+    <div class="imagen"><img src="../img/dialogoaleatorios.png"></div>
+    <br />Then enter randomness intervals of data to generate. If no new values ​​are entered, the 
+	data is generated within the ranges by default.
+    <div class="imagen"><img src="../img/dialogointervalos.png"></div>
+    <br />To complete the data load press the "OK" button.
+	<div class="imagen"><img src="../img/dialogoaceptar.png"></div>
+</p><br /><br />
+
+<h3>Load data from file</h3>
+<p>
+    Select <span class="menuPath"> File &gt; Load data from file </span> from the menu bar.
+    <div class="imagen"><img src="../img/cargardefichero.png"></div>
+    <br />Then select the data file you want to use, and click the "Open" button.
+    <div class="imagen"><img src="../img/dialogoabrir.png"></div><br />
+    <br />Then, it displays a dialog with the number of imported data:
+	<div class="imagen"><img src="../img/dialogoaceptar2.png"></div><br />                                                   
+    
+	<span class="nota">Note: </span>
+    Data files are files .xml format of which is described in section <a href="../formato_ficheros.html">Format files</a>.<br />
+</p><br />
+
+
+<hr />
+<div class="piePagina"><em>September 16, 2016</em></div>  
+</body>
+</html>

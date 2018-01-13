@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/WX636FU/Desktop/JAR&apos;s TFG/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="C:/Users/WX636FU/Desktop/JAR&apos;s TFG/jdom2-2.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/WX636FU/Desktop/JAR&apos;s TFG/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/WX636FU/Desktop/JAR&apos;s TFG/rsyntaxtextarea-2.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/WX636FU/Desktop/JAR&apos;s TFG/substance-4.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

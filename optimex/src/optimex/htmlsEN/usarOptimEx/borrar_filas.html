@@ -1,0 +1,84 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--Como el JEditorPane no reconoce las propiedades de los bordes,-->
+<!--lo comentamos. En su lugar utilizamos la etiqueta <hr /> para-->
+<!--dibujar lineas horizontales. Puede que en un futuro se pueda-->
+<!--utilizar-->
+
+<style type="text/css">
+body, td, th{
+  font-family: verdana, sans-serif;
+  font-size: small;
+}
+
+body {
+	margin: 2ex;
+	max-width: 120ex;
+}
+
+h1 { font-size: 160%; font-weight: normal; }
+h2 { font-size: 150%; font-weight: normal; }
+h3 { font-size: 120%; }
+h4 { font-size: 100%; }
+h5 { font-size: 90%;  }
+h6 { font-size: 90%; border: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 0.2em 0;
+  /*border-bottom: 1px solid #CCCCCC;*/
+  font-family: arial, verdana, sans-serif;
+}
+
+
+.cajaContenidos {
+	margin-top: 12px;
+	background-color: #EEEEEE;
+	/*border: 1px solid #CCCCCC;*/
+	width: 300px;
+	padding: 1em;
+}
+
+.menuPath {
+  background: #c4d0f4; /* bluish color */
+  color: inherit;
+  padding-left:  1px; /* else bgcolor ends at last char - no space */
+  padding-right: 1px;
+}
+
+.piePagina{
+  background-color: #EEEEEE;
+  width: 300px;
+  /*border: medium solid #CCCCCC;*/
+}
+</style>
+<body>
+<a href="../usarOptimEx.html">return</a>
+
+<h1>Delete row in data table</h1><hr /><br />
+
+  <h3>Delete row in data table</h3>
+  <p>
+  	 Select <span class="menuPath"> Tables &gt; Delete row in table of data </span> from the menu bar.<br />
+    <div class="imagen"><img src="../img/borrar_datos.png"></div><br />
+    To produce the deletion, you must first select the row or rows in the table of data.
+  </p><br /><br />
+  
+ <h3>Delete row in history table</h3>
+  <p>
+  	Select <span class="menuPath"> Tables &gt; Delete row in history table </span> from the menu bar.<br />
+    <div class="imagen"><img src="../img/borrar_historica.png"></div><br />
+    To produce the deletion, you must first select the row or rows in the history table.
+  </p><br /><br />
+  
+ <h3>Delete session data</h3>
+  <p>
+  Select <span class="menuPath"> Tables &gt; Delete session data </span> from the menu bar.<br />
+  <div class="imagen"><img src="../img/borrar_sesion.png"></div><br />
+  Deletes all session data, input data, executions ....
+  </p><br /><br />
+
+<hr />
+<div class="piePagina"><em>September 16, 2016</em></div>  
+  
+</body>
+</html>
